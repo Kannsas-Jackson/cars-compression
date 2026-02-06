@@ -1,26 +1,21 @@
+# CARS v2.1 - Compression And Retrieval System
+# PRIORITY: Fidelity > Compression > Speed
+# Speed is NOT a priority. We optimize for zero content loss.
+
 # Core dependencies (required)
 numpy>=1.21.0
 
-# Optional dependencies for enhanced functionality
-# Uncomment to enable transformer-based metrics
+# Optional dependencies for enhanced metrics
+# Uncomment to enable transformer-based similarity/perplexity
 
-# For real embedding similarity (recommended)
+# For real embedding similarity (recommended for production)
 # sentence-transformers>=2.2.0
 
-# For real perplexity computation
+# For real perplexity computation  
 # transformers>=4.20.0
 # torch>=1.10.0
-
-# For GPU acceleration (if available)
-# torch>=1.10.0+cu113
 
 # Development dependencies
 # pytest>=7.0.0
 # black>=22.0.0
 # mypy>=0.950
-# flake8>=4.0.0
-
-# Benchmarking
-# pandas>=1.3.0
-# matplotlib>=3.5.0
-# tqdm>=4.62.0

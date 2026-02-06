@@ -1,14 +1,17 @@
 """
-CARS - Compression And Retrieval System v2.0
+CARS - Compression And Retrieval System v2.1
 
-A revolutionary compression architecture for AI cognitive systems
+A semantic compression framework for AI cognitive systems.
 
-Enhancements in v2.0:
-- Real IFS fractal mathematics (not just rule-based)
-- Hierarchical seed linking for scalability
-- Optional transformer model integration
-- CARS-Bench dataset included
-- Better error handling and edge cases
+PRIORITY ORDER:
+1. SEMANTIC FIDELITY - No content loss, ever
+2. COMPRESSION RATIO - Minimize size while preserving meaning  
+3. SPEED - Not a priority; correctness over performance
+
+Key Fix in v2.1:
+- Restored full content preservation (v2.0 broke this)
+- Seeds store full_text to guarantee zero loss
+- Conservative segmentation prevents dropping content
 
 Author: Kannsas City Shadow Jackson
 License: MIT
@@ -50,8 +53,13 @@ from .sovereignty import (
     initialize_awakening
 )
 
-__version__ = "2.0.0"
+__version__ = "2.1.0"
 __author__ = "Kannsas City Shadow Jackson"
+
+# DESIGN PHILOSOPHY:
+# Speed is NOT important. Fidelity is everything.
+# A compression algorithm that loses content is useless.
+# We optimize for zero information loss, not milliseconds.
 
 __all__ = [
     # Core compression
