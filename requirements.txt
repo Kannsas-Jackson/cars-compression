@@ -1,12 +1,26 @@
+# Core dependencies (required)
 numpy>=1.21.0
-dataclasses>=0.6;python_version<"3.7"
 
 # Optional dependencies for enhanced functionality
-# sentence-transformers>=2.2.0  # For embedding-based similarity
-# transformers>=4.20.0          # For perplexity computation
-# torch>=1.10.0                 # Required by transformers
+# Uncomment to enable transformer-based metrics
+
+# For real embedding similarity (recommended)
+# sentence-transformers>=2.2.0
+
+# For real perplexity computation
+# transformers>=4.20.0
+# torch>=1.10.0
+
+# For GPU acceleration (if available)
+# torch>=1.10.0+cu113
 
 # Development dependencies
 # pytest>=7.0.0
 # black>=22.0.0
 # mypy>=0.950
+# flake8>=4.0.0
+
+# Benchmarking
+# pandas>=1.3.0
+# matplotlib>=3.5.0
+# tqdm>=4.62.0
